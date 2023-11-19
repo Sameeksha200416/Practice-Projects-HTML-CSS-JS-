@@ -1,0 +1,109 @@
+.wrapper{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.body{
+    color: white;
+    font-family:'Poiret One' cursive;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    background-image: linear-gradient(to right, #03938c 0%, black 100%);
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 5% 95%;
+    grid-template-areas: 
+    "hd hd"
+    "main sd";
+}
+
+p{
+    color: #ffffff;
+    font-style: normal;
+}
+
+header{
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    grid-area: main;
+    padding-right: 2rem;
+}
+
+aside{
+    grid-area:sd;
+}
+
+a{
+    color: rgb(33, 250, 40);
+    text-decoration: none;
+    cursor: pointer;
+    font-style: italic;
+    font-family: 'cursive';
+}
+
+a:hover{
+    color: white;
+}
+
+header>h1{
+    color: #f50792;
+    text-shadow: 2px 2px 2px rgb(246, 230, 211);
+    font-size:50px;
+    text-align: center;
+    display: inline;
+}
+header>input[type]{
+    display:inline;
+    padding-top: 0%;
+    border: 1px solid black;
+    width: 5rem;
+    padding: 5px;
+    border-radius: 1rem;
+    color: rgb(14, 14, 14);
+    font-weight: 500;
+}
+
+main>h2 , aside>h2{
+    color: rgb(246, 227, 57);
+}
+
+.date{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -1.2rem ;
+    font-size:1em;
+    text-decoration: underline;
+    color: aliceblue;
+}
+ul,ol{
+    color: #ffffff;
+    font-style: normal; 
+}
+.social{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1,h2,h3{
+    text-shadow:1px 1px rgb(242, 126, 115);
+}
+.button{
+   display: inline-block;
+   font-size: 16px;
+   padding: 10px 10pxpx;
+   text-align: left;
+   background-color: #4CAF50; /* Green */
+   border: none;
+   border-radius: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
